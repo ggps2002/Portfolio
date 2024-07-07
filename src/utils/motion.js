@@ -1,3 +1,22 @@
+import { easeInOut } from "framer-motion";
+
+export const heroHead = (delay) => {
+  return {
+    hidden: {
+      y:-30,
+      opacity:0,
+    },
+    show:{
+      y: 0,
+      opacity:1,
+      transition: {
+        type: easeInOut,
+        duration:1,
+        delay:delay,
+      }
+    }
+  }
+}
 export const textVariant = (delay) => {
     return {
       hidden: {

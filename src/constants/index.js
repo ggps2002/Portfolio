@@ -13,16 +13,17 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
+    postgres,
     docker,
+    FoxTrading,
     meta,
-    starbucks,
-    tesla,
+    JPMorgan,
     shopify,
-    carrent,
+    biblio,
     jobit,
     tripguide,
     threejs,
+    biblioVid
   } from "../assets";
   
   export const navLinks = [
@@ -105,8 +106,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "postgres",
+      icon: postgres,
     },
     {
       name: "docker",
@@ -116,57 +117,56 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Machine Learning Intern",
+      company_name: "Fox Trading",
+      icon: FoxTrading,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "May 2021 - July 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mastered various machine learning algorithms, including linear regression, decision trees, and neural networks.",
+        "Developed and trained predictive models, focusing on data preprocessing, feature engineering, and model evaluation.",
+        "Created a bike-sharing model to predict bike ride availability in specific localities using historical and weather data.",
+        "Deployed models into production, ensuring efficient code, optimized performance, and seamless integration with existing systems.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Software Engineering Experience",
+      company_name: "JPMorgan Chase & Co.",
+      icon: JPMorgan,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "May 2024 - June 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Interfaced stock price data feed with JPMorgan Chase tools and frameworks like Perspective to display real-time stock data visually.",
+        "Implemented the Perspective open source code in preparation for data visualisation",
+        "Used Perspective to create a chart for a trading dashboard"
       ],
     },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -198,9 +198,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Biblio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to track and organise their reading habits through storing information about a book they read.",
       tags: [
         {
           name: "react",
@@ -214,52 +214,58 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
+          name: "postgres",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: biblio,
+      source_code_link: "https://github.com/ggps2002/BookManager",
+      vid: biblioVid,
+      liveURL: "https://mellifluous-kringle-12e9db.netlify.app"
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Job IT",
+    //   description:
+    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "restapi",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "scss",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: jobit,
+    //   source_code_link: "https://github.com/",
+    // },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };

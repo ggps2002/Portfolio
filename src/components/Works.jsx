@@ -6,8 +6,9 @@ import {github} from '../assets';
 import {SectionWrapper} from '../hoc';
 import {projects} from '../constants';
 import {fadeIn,textVariant} from '../utils/motion';
+import ProjectButton from './ProjectButton'
 
-const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
+const ProjectCard=({index,name,description,tags,vid,source_code_link})=>{
   return (
     <motion.div variants={fadeIn("up","spring",index * 0.5,0.75)}>
       <Tilt 
@@ -19,7 +20,7 @@ const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className='relative w-full h-[230px]'>
-          <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl'/>
+          <img src={vid} alt={name} className='w-full h-full object-contain rounded-2xl'/>
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={()=>{
@@ -53,7 +54,7 @@ const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
 
 const Works = () => {
   return (
-    <>
+    <div >
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -73,12 +74,15 @@ const Works = () => {
           and manage projects efficiently. 
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-10 md:block xxs:hidden'>
+        <ProjectButton project = {projects[0]}/>
+      </div>
+      <div className='mt-20 flex flex-wrap gap-7 xxs:block md:hidden'>
         {projects.map((project,index)=>(
           <ProjectCard key={`project-${index}`} index={index} {...project}/>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

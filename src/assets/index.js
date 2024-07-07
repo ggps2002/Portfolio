@@ -9,7 +9,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import postgres from "./tech/postgres.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -23,12 +23,14 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import FoxTrading from "./company/FoxTrading.png";
+import JPMorgan from "./company/JPMorganChase&Co.png";
 
-import carrent from "./carrent.png";
+import biblio from "./biblio.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import biblioVid from "./projectVideos/biblioVid.gif"
 
 export {
   logo,
@@ -41,7 +43,7 @@ export {
   close,
   css,
   docker,
-  figma,
+  postgres,
   git,
   html,
   javascript,
@@ -54,9 +56,10 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
-  tesla,
-  carrent,
+  FoxTrading,
+  JPMorgan,
+  biblio,
   jobit,
   tripguide,
+  biblioVid
 };
