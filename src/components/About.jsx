@@ -50,7 +50,7 @@ const About = () => {
           <div className="h-10 w-full flex gap-6 mt-5">
           <a href="https://www.facebook.com/profile.php?id=100077262802575" target="_blank" rel="noopener noreferrer"><div className="h-fit w-fit"><FacebookRoundedIcon fontSize="large"/></div></a>
           <a href="https://github.com/ggps2002" target="_blank" rel="noopener noreferrer"><div className="h-10 w-10"><GitHubIcon fontSize="large"/></div></a>
-          <a href="https://x.com/abcd34586295297" target="_blank" rel="noopener noreferrer"><div className="h-10 w-10"><XIcon fontSize="large"/></div></a>
+          <a href="https://x.com/Pradipto02" target="_blank" rel="noopener noreferrer"><div className="h-10 w-10"><XIcon fontSize="large"/></div></a>
           <a href="https://www.linkedin.com/in/pradipto-shivam-ba19ba243/" target="_blank" rel="noopener noreferrer"><div className="h-fit w-fit "><LinkedInIcon fontSize="large"/></div></a>
           </div> 
       <div className='flex text-[20vh] whitespace-nowrap overflow-hidden'>
