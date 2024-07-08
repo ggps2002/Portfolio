@@ -19,7 +19,13 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
+import C from "./tech/C.png"
+import Cpp from "./tech/C++.png"
+import Python from "./tech/Python.png"
+import Java from "./tech/Java.png"
+import Angular from "./tech/Angular.png"
+import Nextjs from "./tech/nextjs.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,6 +37,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import biblioVid from "./projectVideos/biblioVid.gif"
+import { i } from "maath/dist/index-0332b2ed.esm";
 
 export {
   logo,
@@ -50,6 +57,12 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  Nextjs,
+  C,
+  Cpp,
+  Python,
+  Angular,
+  Java,
   redux,
   tailwind,
   typescript,
