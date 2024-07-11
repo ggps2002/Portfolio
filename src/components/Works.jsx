@@ -75,7 +75,9 @@ const Works = () => {
         </motion.p>
       </div>
       <div className='mt-10 md:block xxs:hidden'>
-        <ProjectButton project = {projects[0]}/>
+        {projects.map((project,index)=>(
+          <ProjectButton key={`project-${index}`} project = {project}/>
+        ))}
       </div>
       <div className='mt-20 flex flex-wrap gap-7 xxs:block md:hidden'>
         {projects.map((project,index)=>(

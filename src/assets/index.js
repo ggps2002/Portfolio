@@ -33,11 +33,12 @@ import FoxTrading from "./company/FoxTrading.png";
 import JPMorgan from "./company/JPMorganChase&Co.png";
 
 import biblio from "./biblio.png";
+import DUOStudio from "./DUOStudio.png"
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import biblioVid from "./projectVideos/biblioVid.gif"
-import { i } from "maath/dist/index-0332b2ed.esm";
+import DUOStudioVid from "./projectVideos/DUOStudioVid.gif"
 
 export {
   logo,
@@ -72,7 +73,9 @@ export {
   FoxTrading,
   JPMorgan,
   biblio,
+  DUOStudio,
   jobit,
   tripguide,
-  biblioVid
+  biblioVid,
+  DUOStudioVid
 };

@@ -26,10 +26,12 @@ import {
   JPMorgan,
   shopify,
   biblio,
+  DUOStudio,
   jobit,
   tripguide,
   threejs,
-  biblioVid
+  biblioVid,
+  DUOStudioVid
 } from "../assets";
 
 export const navLinks = [
@@ -292,27 +294,29 @@ const projects = [
     vid: biblioVid,
     liveURL: "https://mellifluous-kringle-12e9db.netlify.app"
   },
-  // {
-  //   name: "Job IT",
-  //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "DUO Studio",
+    description:
+      "DUO Studio is a showcase of modern web design and animation techniques. By leveraging GSAP and LocomotiveScroll, this project demonstrates how to create smooth and engaging animations that enhance user experience. The website is built with a focus on performance and visual appeal.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: DUOStudio,
+    source_code_link: "https://github.com/ggps2002/DUOWebsite",
+    vid: DUOStudioVid,
+    liveURL: "https://courageous-cassata-ebe3b0.netlify.app"
+  }
   // {
   //   name: "Trip Guide",
   //   description:
