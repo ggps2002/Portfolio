@@ -297,7 +297,7 @@ const projects = [
   {
     name: "DUO Studio",
     description:
-      "DUO Studio is a showcase of modern web design and animation techniques. By leveraging GSAP and LocomotiveScroll, this project demonstrates how to create smooth and engaging animations that enhance user experience. The website is built with a focus on performance and visual appeal.",
+      "A modern website called DUO Studio, showcasing smooth scrolling animations and advanced timeline control using GSAP and LocomotiveScroll.",
     tags: [
       {
         name: "HTML",

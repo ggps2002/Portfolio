@@ -18,7 +18,7 @@ const ProjectButton = (props) => {
     }
   return (
     <>
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}  className={`fixed bottom-[10vh] z-[100] right-[10vw] min-h-[60vh] min-w-[30vw] bg-tertiary ${!divTop && "hidden"} rounded-lg`}>
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}  className={`fixed bottom-[10vh] z-[100] right-[10vw] h-[60vh] w-[30vw] bg-tertiary ${!divTop && "hidden"} rounded-lg`}>
         <a href={props.project.liveURL} target="_blank" rel="noopener noreferrer"><div onMouseEnter={handleVidDivMouseEnter} onMouseLeave={handleVidDivMouseLeave}  className=' h-1/2 w-full'>
             {!showVid ? <img className=' max-h-full w-full object-cover' src={props.project.image} alt="" />:<img className=' max-h-full w-full object-cover'  src={props.project.vid} alt="" />}
         </div></a>
