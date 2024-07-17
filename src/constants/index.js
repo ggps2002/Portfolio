@@ -204,7 +204,7 @@ const experiences = [
     company_name: "JPMorgan Chase & Co.",
     icon: JPMorgan,
     iconBg: "#E6DEDD",
-    date: "May 2024 - June 2024",
+    date: "May 2023 - June 2023",
     points: [
       "Interfaced stock price data feed with JPMorgan Chase tools and frameworks like Perspective to display real-time stock data visually.",
       "Implemented the Perspective open source code in preparation for data visualisation",
