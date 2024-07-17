@@ -40,7 +40,7 @@ const About = () => {
       >
         <h1>Web Developer</h1>
         <div className='w-10 h-10 self-center rounded-full bg-[#915EFF]' />
-        <h1>React Native Developer</h1>
+        <h1>React Developer</h1>
         <div className='w-10 h-10 rounded-full self-center bg-[#915EFF]' />
         <h1>Backend Developer</h1>
       </motion.div>
