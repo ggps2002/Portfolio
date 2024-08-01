@@ -27,14 +27,15 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Pradipto</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I develop user <br className='sm:block hidden' />
+            interfaces and web applications,<br/>
+             with a strong foundation in AI and machine learning.
           </p>
         </motion.div>
       </div>
       <div className="h-[10vh] w-full bg-white pointer-events-none">
       </div>
-      <ComputersCanvas className="fixed -z-10" />
+      {/* <ComputersCanvas className="fixed -z-10" /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

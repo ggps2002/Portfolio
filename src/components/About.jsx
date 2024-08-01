@@ -19,7 +19,7 @@ const About = () => {
         variants={fadeIn("","",0.1,1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        I specialize in designing dynamic user interfaces and developing robust web applications. With a strong foundation in AI and machine learning, I bring innovation and intelligence to every project, transforming ideas into seamless digital experiences.
       </motion.p>
           <div className="h-10 w-full flex gap-6 mt-5">
           <a href="https://www.facebook.com/profile.php?id=100077262802575" target="_blank" rel="noopener noreferrer"><div className="h-fit w-fit"><FacebookRoundedIcon fontSize="large"/></div></a>
@@ -27,23 +27,35 @@ const About = () => {
           <a href="https://x.com/Pradipto02" target="_blank" rel="noopener noreferrer"><div className="h-10 w-10"><XIcon fontSize="large"/></div></a>
           <a href="https://www.linkedin.com/in/pradipto-shivam-ba19ba243/" target="_blank" rel="noopener noreferrer"><div className="h-fit w-fit "><LinkedInIcon fontSize="large"/></div></a>
           </div> 
-      <div className='flex text-[20vh] whitespace-nowrap overflow-hidden'>
+      <div className='flex text-[10vw] whitespace-nowrap overflow-hidden'>
       <motion.div
-        animate={{ x: ["30%","-100%"] }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 20,
-          ease: "linear",
-        }}
-        className='gap-10 flex '
-      >
-        <h1>Web Developer</h1>
-        <div className='w-10 h-10 self-center rounded-full bg-[#915EFF]' />
-        <h1>React Developer</h1>
-        <div className='w-10 h-10 rounded-full self-center bg-[#915EFF]' />
-        <h1>Backend Developer</h1>
-      </motion.div>
+  animate={{ x: ["30%", "-100%"] }}
+  transition={{
+    repeat: Infinity,
+    repeatType: "loop",
+    duration: 20,
+    ease: "linear",
+  }}
+  className="flex"
+>
+  <div className="flex items-center">
+    <h1>Web Developer</h1>
+    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+    <h1>React Developer</h1>
+    <div className="w-10 h-10 rounded-full self-center bg-[#915EFF] mx-[6rem]" />
+    <h1>Backend Developer</h1>
+    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+  </div>
+  <div className="flex items-center">
+    <h1>Web Developer</h1>
+    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+    <h1>React Developer</h1>
+    <div className="w-10 h-10 rounded-full self-center bg-[#915EFF] mx-[6rem]" />
+    <h1>Backend Developer</h1>
+    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+  </div>
+</motion.div>
+
     </div>
     </div>
   )
