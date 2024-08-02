@@ -1,6 +1,5 @@
 import { easeInOut, motion } from "framer-motion";
 import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
 // import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 // import GitHubIcon from '@mui/icons-material/GitHub';
 // import XIcon from '@mui/icons-material/X';
