@@ -52,7 +52,6 @@ const About = () => {
     <h1>React Developer</h1>
     <div className="w-10 h-10 rounded-full self-center bg-[#915EFF] mx-[6rem]" />
     <h1>Backend Developer</h1>
-    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
   </div>
 </motion.div>
 
