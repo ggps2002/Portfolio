@@ -7,7 +7,7 @@ import { styles } from "../style";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`} data-scroll>
+    <section className={`relative w-full h-screen mx-auto`} >
       <div
         className={`absolute  inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 overflow-hidden`}
       >
@@ -31,8 +31,6 @@ const Hero = () => {
              with a strong foundation in AI and machine learning.
           </p>
         </motion.div>
-      </div>
-      <div className="h-[10vh] w-full bg-white pointer-events-none">
       </div>
       {/* <ComputersCanvas className="fixed -z-10" /> */}
 

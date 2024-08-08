@@ -33,7 +33,7 @@ const About = () => {
   transition={{
     repeat: Infinity,
     repeatType: "loop",
-    duration: 20,
+    duration: 25,
     ease: "linear",
   }}
   className="flex"
