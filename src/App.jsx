@@ -7,7 +7,7 @@ const App = () => {
         <BrowserRouter>
           <main className="relative z-0 bg-primary">
             <div className=" bg-gradient-to-t from-[#050816] via-[#050816] to-[#915EFF]">
-              <Navbar/>
+              <Navbar />
               <Hero />
             </div>
             <About />

@@ -40,17 +40,17 @@ const About = () => {
 >
   <div className="flex items-center">
     <h1>Web Developer</h1>
-    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+    <div className="w-[3vw] h-[3vw] self-center rounded-full bg-[#915EFF] mx-[2.5vw]" />
     <h1>React Developer</h1>
-    <div className="w-10 h-10 rounded-full self-center bg-[#915EFF] mx-[6rem]" />
+    <div className="w-[3vw] h-[3vw] rounded-full self-center bg-[#915EFF] mx-[2.5vw]" />
     <h1>Backend Developer</h1>
-    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+    <div className="w-[3vw] h-[3vw] self-center rounded-full bg-[#915EFF] mx-[2.5vw]" />
   </div>
   <div className="flex items-center">
     <h1>Web Developer</h1>
-    <div className="w-10 h-10 self-center rounded-full bg-[#915EFF] mx-[6rem]" />
+    <div className="w-[3vw] h-[3vw] self-center rounded-full bg-[#915EFF] mx-[2.5vw]" />
     <h1>React Developer</h1>
-    <div className="w-10 h-10 rounded-full self-center bg-[#915EFF] mx-[6rem]" />
+    <div className="w-[3vw] h-[3vw] rounded-full self-center bg-[#915EFF] mx-[2.5vw]" />
     <h1>Backend Developer</h1>
   </div>
 </motion.div>
