@@ -18,10 +18,10 @@ const Navbar = () => {
 
       if (currentScrollPosition > lastScrollPosition) {
         setScrollDirection('down');
-        console.log('User scrolled down!');
+
       } else if (currentScrollPosition < lastScrollPosition) {
         setScrollDirection('up');
-        console.log('User scrolled up!');
+
       }
 
       setLastScrollPosition(currentScrollPosition);
