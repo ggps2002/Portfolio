@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="h-10 w-10"><XIcon fontSize="large"/></div>
           <div className="h-fit w-fit "><LinkedInIcon fontSize="large"/></div>
           </div> */}
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white leading-none`}>
             Hi, I'm <span className='text-[#915EFF]'>Pradipto</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -45,7 +45,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] absolute top-1/2 left-[0%] blur-lg`}
+          className={`h-[7rem] w-[7rem] -z-10 rounded-full bg-[#050816] absolute top-1/2 left-[0%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -58,7 +58,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] absolute top-1/2 -z-10 left-[20%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] absolute top-1/2 -z-10 left-[20%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -71,7 +71,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[40%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[40%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -84,7 +84,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[60%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[60%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -97,7 +97,7 @@ const Hero = () => {
             duration: 45,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full -z-10 bg-[#050816] absolute top-1/2 left-[80%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full -z-10 bg-[#050816] absolute top-1/2 left-[80%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -110,7 +110,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full -z-10 bg-[#050816] absolute top-1/2 left-[5%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full -z-10 bg-[#050816] absolute top-1/2 left-[5%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -123,7 +123,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[70%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[70%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -136,7 +136,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[10%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[10%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -149,7 +149,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[45%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[45%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -162,7 +162,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[15%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[15%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -175,7 +175,7 @@ const Hero = () => {
             duration: 50,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[75%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[75%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -188,7 +188,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[65%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[65%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -201,7 +201,7 @@ const Hero = () => {
             duration: 25,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[25%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[25%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -214,7 +214,7 @@ const Hero = () => {
             duration: 35,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[85%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[85%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -227,7 +227,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[95%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[95%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -240,7 +240,7 @@ const Hero = () => {
             duration: 10,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[55%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[55%] blur-lg`}
         />
         <motion.div
           animate={{
@@ -253,7 +253,7 @@ const Hero = () => {
             duration: 28,
             ease: "easeInOut"
           }}
-          className={`h-[7vw] w-[7vw] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[35%] blur-lg`}
+          className={`h-[7rem] w-[7rem] rounded-full bg-[#050816] -z-10 absolute top-1/2 left-[35%] blur-lg`}
         />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
