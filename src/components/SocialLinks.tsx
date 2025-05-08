@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Twitter, Github, Linkedin, Dribbble } from "lucide-react";
+import { Twitter, Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
   { icon: Twitter, href: "https://twitter.com/Pradipto02", color: "text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary" },

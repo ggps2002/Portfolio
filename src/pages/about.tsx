@@ -24,7 +24,7 @@ const About = () => {
           >
             <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm overflow-hidden">
               <img 
-                src="assets/portfolioPic.jpeg" 
+                src="assets/whatsapp_pic.jpg" 
                 alt="Profile picture" 
                 className="w-full aspect-square object-cover" 
               />

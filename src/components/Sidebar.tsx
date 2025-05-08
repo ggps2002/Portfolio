@@ -10,6 +10,7 @@ import {
   Clock,
   Code,
   Mail,
+  MessageSquareQuote,
 } from "lucide-react";
 
 interface SidebarProps {
@@ -46,7 +47,7 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
       case "contact":
         return <Mail className="w-6 h-6" />;
       default:
-        return <Home className="w-6 h-6" />;
+        return <MessageSquareQuote className="w-6 h-6" />;
     }
   };
 
@@ -108,7 +109,7 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
 
       {/* Horizontal Bar for Mobile */}
       {windowWidth < 768 && (
-        <div className="fixed mt-1 mx-1 rounded-lg top-0 left-0 w-full backdrop-blur-md shadow-md z-30 flex justify-around items-center py-2 dark:border-slate-700">
+        <div className="fixed mt-1 mx-6 rounded-lg top-0 inset-x-0 backdrop-blur-md shadow-md z-30 flex justify-around items-center py-2 dark:border-slate-700">
           {sections.map((section) => (
             <button
               key={section.id}

@@ -56,6 +56,19 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 1,
+    role: "Freelance Web Developer",
+    company: "Self-employed",
+    year: "2025",
+    description: "Worked on a new feature on an existing website. Resolved bugs and help deploy the site",
+    achievements: [
+      "Built AI chat systems and RAG applications with responsive designs",
+      "Implemented performance optimizations resulting in improved load times",
+      "Maintained strong client relationships with clear communication"
+    ],
+    technologies: ["JavaScript/Typescript", "React/NextJS", "Firebase/PostgreSQL"]
+  },
+  {
+    id: 2,
     role: "Frontend Web Developer",
     company: "Startup",
     year: "2024",
@@ -65,21 +78,8 @@ export const experiences: Experience[] = [
       "Implemented responsive design ensuring optimal experience across devices",
       "Collaborated effectively with cross-functional teams to deliver on schedule"
     ],
-    technologies: ["React", "Tailwind CSS", "Next.js", "Figma", "Framer Motion"]
+    technologies: ["React", "Tailwind CSS", "Figma", "Framer Motion"]
   },
-  // {
-  //   id: 2,
-  //   role: "Freelance Web Developer",
-  //   company: "Self-employed",
-  //   year: "2022",
-  //   description: "Worked on various client projects, developing websites and web applications with a focus on clean design and optimal user experience.",
-  //   achievements: [
-  //     "Built multiple client websites with responsive designs",
-  //     "Implemented performance optimizations resulting in improved load times",
-  //     "Maintained strong client relationships with clear communication"
-  //   ],
-  //   technologies: ["JavaScript", "HTML/CSS", "React", "WordPress"]
-  // }
 ];
 
 export const testimonials: Testimonial[] = [

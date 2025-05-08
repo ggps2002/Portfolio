@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Send } from "lucide-react";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,12 +15,19 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from "emailjs-com";
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters long" }),
+  name: z
+    .string()
+    .min(2, { message: "Name must be at least 2 characters long" }),
   email: z.string().email({ message: "Please enter a valid email address" }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters long" }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters long" })
+  subject: z
+    .string()
+    .min(5, { message: "Subject must be at least 5 characters long" }),
+  message: z
+    .string()
+    .min(10, { message: "Message must be at least 10 characters long" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -29,35 +35,58 @@ type FormValues = z.infer<typeof formSchema>;
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
       subject: "",
-      message: ""
-    }
+      message: "",
+    },
   });
 
   const onSubmit = async (data: FormValues) => {
+    const lastSent = localStorage.getItem("lastContactSent");
+    const now = Date.now();
+
+    if (lastSent && now - parseInt(lastSent) < 60 * 1000) {
+      toast({
+        title: "Too soon!",
+        description: "Please wait a minute before sending another message.",
+        variant: "destructive",
+      });
+      return;
+    }
     try {
       setIsSubmitting(true);
-      
-      // Send the form data to the server
-      await apiRequest("POST", "/api/contact", data);
-      
+
+      // Send the form data as an email
+      await emailjs.send(
+        "service_wgh4r5d",
+        "template_nsiqe5w",
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        "xLbciww5ljsqxFFFK"
+      );
+
       toast({
         title: "Message sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
-      
+
       form.reset();
     } catch (error) {
+      console.error(error);
       toast({
         title: "Error sending message",
-        description: "There was a problem sending your message. Please try again.",
-        variant: "destructive"
+        description:
+          "There was a problem sending your message. Please try again.",
+        variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
@@ -73,7 +102,9 @@ const ContactForm = () => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">Name</FormLabel>
+                <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Name
+                </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Your name"
@@ -85,13 +116,15 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">Email</FormLabel>
+                <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Email
+                </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Your email address"
@@ -104,13 +137,15 @@ const ContactForm = () => {
             )}
           />
         </div>
-        
+
         <FormField
           control={form.control}
           name="subject"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">Subject</FormLabel>
+              <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                Subject
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="What's this about?"
@@ -122,13 +157,15 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        
+
         <FormField
           control={form.control}
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</FormLabel>
+              <FormLabel className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                Message
+              </FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Your message"
@@ -141,7 +178,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        
+
         <Button
           type="submit"
           disabled={isSubmitting}

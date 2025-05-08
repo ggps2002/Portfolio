@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
-import { Mail, MapPin, Globe, Briefcase, Twitter, Github, Linkedin, Dribbble } from "lucide-react";
+import { Mail, MapPin, Globe, Briefcase, Twitter, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (

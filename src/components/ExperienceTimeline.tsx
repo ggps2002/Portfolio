@@ -53,7 +53,7 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
                 <ul className="space-y-2">
                   {experience.achievements.map((achievement, achieveIndex) => (
                     <li key={achieveIndex} className="flex items-start">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-1" />
+                      <CheckCircle className=" text-green-500 mr-2 mt-1" />
                       <span className="text-slate-600 dark:text-slate-300">
                         {achievement}
                       </span>

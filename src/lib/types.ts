@@ -1,3 +1,7 @@
+declare module "cmdk";
+declare module "vaul";
+declare module "input-otp";
+
 export interface Project {
   id: number;
   title: string;
