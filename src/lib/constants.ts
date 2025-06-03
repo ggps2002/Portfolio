@@ -50,7 +50,36 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "Chrome API", "HTML/CSS"],
     github: "https://github.com/ggps2002/AWS-AI-Assistant-Chrome-Extension",
     // demo: "https://github.com/johndoe/aws-nav-helper/releases"
-  }
+  },
+    {
+    id: 5,
+    title: "SpyGPT",
+    description: "An AI-powered PDF chat platform that enables interactive conversations with documents, featuring advanced humanization of AI-generated text to bypass detection tools. Includes AI text detection techniques and performance metrics for transparency and analysis.",
+    imageUrl: "assets/spygpt.png",
+    category: "Client Project",
+    technologies: ["Typescript", "Nextjs", "GPT API", "Redis", "RAG", "Firebase"],
+    // demo: "https://github.com/johndoe/aws-nav-helper/releases"
+  },
+      {
+    id: 6,
+    title: "Eventure",
+    description: "A Landing Page for an event booking and management startup.",
+    imageUrl: "assets/eventure.png",
+    category: "Client Project",
+    technologies: ["Typescript", "React", "Framer Motion", "Postgres"],
+    // demo: "https://github.com/johndoe/aws-nav-helper/releases"
+  },
+        {
+    id: 7,
+    title: "Change The Narrative 333",
+    description: "A website for a non-profit organization to collect surveys and spread awareness",
+    imageUrl: "assets/changethenarrative333.png",
+    category: "Client Project",
+    technologies: ["Typescript", "Nextjs", "UI", "Firebase"],
+    // demo: "https://github.com/johndoe/aws-nav-helper/releases"
+  },
+  
+  
 ];
 
 export const experiences: Experience[] = [

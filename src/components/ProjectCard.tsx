@@ -14,11 +14,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       className="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md group"
     >
       <div className="relative">
-        <img 
+        <div className="">
+          <img 
           src={project.imageUrl} 
           alt={project.title}
-          className="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
+        </div>
         <div className="absolute top-4 right-4">
           <span className={`inline-block px-3 py-1 ${
             project.category === 'Personal Project' 
@@ -44,10 +46,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
         </div>
         <div className="flex items-center justify-between">
-          <a href={project.demo} className="text-primary hover:text-primary/80 text-sm font-medium flex items-center">
+          {project.demo && <a href={project.demo} className="text-primary hover:text-primary/80 text-sm font-medium flex items-center">
             View Project
             <ArrowRight className="w-4 h-4 ml-1" />
-          </a>
+          </a>}
           <div className="flex items-center space-x-2">
             {project.github && (
               <a 
@@ -57,12 +59,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <Github className="w-4 h-4" />
               </a>
             )}
-            <a 
+              {project.demo && <a 
               href={project.demo} 
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 transition-colors duration-200"
             >
               <ExternalLink className="w-4 h-4" />
-            </a>
+            </a>}
           </div>
         </div>
       </div>
